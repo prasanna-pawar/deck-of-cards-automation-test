@@ -37,7 +37,7 @@ public class UserStepDefinitions extends StepDefinitions {
     @Then("User should get a new deck of cards")
     public void i_should_get_a_new_deck_of_cards() {
         // Write code here that turns the phrase above into concrete actions
-        Assert.assertTrue(response.getBody().jsonPath().get("success"));
+        Assert.assertTrue(response.getBody().jsonPath().getBoolean("success"));
 
     }
 
