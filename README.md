@@ -9,7 +9,11 @@
 
 ## Steps to execute the test suite
 ```groovy
-$ mvn clean install
+$ mvn clean verify
+```
+## Check the test report
+```
+$ open target/cucumber-html-reports/overview-features.html
 ```
 
 ## Structure of the application. 
